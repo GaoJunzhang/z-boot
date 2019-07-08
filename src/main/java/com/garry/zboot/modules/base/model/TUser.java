@@ -2,6 +2,7 @@ package com.garry.zboot.modules.base.model;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.garry.zboot.base.ZbootBaseEntity;
 import com.garry.zboot.common.constant.CommonConstant;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -18,7 +19,7 @@ import java.util.List;
 @Table(name = "t_user")
 @TableName("t_user")
 @ApiModel(value = "用户")
-public class TUser  implements java.io.Serializable {
+public class TUser  extends ZbootBaseEntity {
 
 	private static final long serialVersionUID = 1L;
 
