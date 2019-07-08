@@ -7,7 +7,8 @@ import java.util.List;
 
 /**
  * 角色部门接口
- * @author Exrick
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:29
  */
 public interface RoleDepartmentService extends ZbootBaseService<TRoleDepartment,String> {
 

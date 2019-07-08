@@ -7,7 +7,8 @@ import java.util.List;
 
 /**
  * 部门接口
- * @author Exrick
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:27
  */
 public interface DepartmentService extends ZbootBaseService<TDepartment,String> {
 

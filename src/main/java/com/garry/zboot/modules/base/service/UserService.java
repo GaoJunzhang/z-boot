@@ -13,7 +13,8 @@ import java.util.List;
 
 /**
  * 用户接口
- * @author Exrickx
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:29
  */
 @CacheConfig(cacheNames = "user")
 public interface UserService extends ZbootBaseService<TUser,String> {

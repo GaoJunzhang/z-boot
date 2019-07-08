@@ -20,7 +20,8 @@ import java.util.List;
 
 /**
  * 字典数据接口实现
- * @author Exrick
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:24
  */
 @Slf4j
 @Service

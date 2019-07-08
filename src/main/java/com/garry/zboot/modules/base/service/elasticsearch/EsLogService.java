@@ -6,7 +6,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 /**
- * @author Exrickx
+ * EsLogService
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:23
  */
 public interface EsLogService {
 
@@ -15,6 +17,7 @@ public interface EsLogService {
      * @param esLog
      * @return
      */
+
     EsLog saveLog(EsLog esLog);
 
     /**

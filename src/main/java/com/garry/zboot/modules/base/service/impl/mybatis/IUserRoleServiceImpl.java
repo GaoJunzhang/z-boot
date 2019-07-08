@@ -11,7 +11,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author Exrickx
+ *
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:24
  */
 @Service
 public class IUserRoleServiceImpl extends ServiceImpl<UserRoleMapper, TUserRole> implements IUserRoleService {

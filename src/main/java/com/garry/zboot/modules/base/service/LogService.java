@@ -9,7 +9,8 @@ import org.springframework.data.domain.Pageable;
 
 /**
  * 日志接口
- * @author Exrickx
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:28
  */
 public interface LogService extends ZbootBaseService<TLog,String> {
 

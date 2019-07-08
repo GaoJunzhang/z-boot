@@ -9,7 +9,8 @@ import java.util.List;
 
 /**
  * 字典数据接口
- * @author Exrick
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:28
  */
 public interface DictDataService extends ZbootBaseService<TDictData,String> {
 

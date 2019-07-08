@@ -7,7 +7,8 @@ import java.util.List;
 
 /**
  * 权限接口
- * @author Exrick
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:28
  */
 public interface PermissionService extends ZbootBaseService<TPermission,String> {
 

@@ -7,7 +7,8 @@ import java.util.List;
 
 /**
  * 角色权限接口
- * @author Exrick
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:29
  */
 public interface RolePermissionService extends ZbootBaseService<TRolePermission,String> {
 

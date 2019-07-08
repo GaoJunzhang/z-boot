@@ -22,7 +22,8 @@ import java.util.List;
 
 /**
  * 日志接口实现
- * @author Exrickx
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:25
  */
 @Slf4j
 @Service

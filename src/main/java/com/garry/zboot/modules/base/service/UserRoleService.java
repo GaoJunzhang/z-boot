@@ -8,7 +8,8 @@ import java.util.List;
 
 /**
  * 用户角色接口
- * @author Exrickx
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:29
  */
 public interface UserRoleService extends ZbootBaseService<TUserRole,String> {
 

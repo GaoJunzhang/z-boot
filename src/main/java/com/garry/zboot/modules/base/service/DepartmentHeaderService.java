@@ -7,7 +7,8 @@ import java.util.List;
 
 /**
  * 部门负责人接口
- * @author Exrick
+ * @Author gaojunzhang
+ * @Date 2019/7/8 23:26
  */
 public interface DepartmentHeaderService extends ZbootBaseService<TDepartmentHeader,String> {
 
