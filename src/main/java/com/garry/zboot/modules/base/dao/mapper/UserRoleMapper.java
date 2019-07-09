@@ -1,19 +1,19 @@
 package com.garry.zboot.modules.base.dao.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.garry.zboot.modules.base.model.TRole;
-import com.garry.zboot.modules.base.model.TUserRole;
+import com.garry.zboot.modules.base.model.Role;
+import com.garry.zboot.modules.base.model.UserRole;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface UserRoleMapper extends BaseMapper<TUserRole> {
+public interface UserRoleMapper extends BaseMapper<UserRole> {
     /**
      * 通过用户id获取
      * @param userId
      * @return
      */
-    List<TRole> findByUserId(@Param("userId") String userId);
+    List<Role> findByUserId(@Param("userId") String userId);
 
     /**
      * 通过用户id获取用户角色关联的部门数据

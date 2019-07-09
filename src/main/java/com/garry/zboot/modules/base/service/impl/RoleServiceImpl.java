@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.modules.base.dao.TRoleDao;
-import com.garry.zboot.modules.base.model.TRole;
+import com.garry.zboot.modules.base.model.Role;
 import com.garry.zboot.modules.base.service.RoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public List<TRole> findByDefaultRole(Boolean defaultRole) {
+    public List<Role> findByDefaultRole(Boolean defaultRole) {
         return roleDao.findByDefaultRole(defaultRole);
     }
 }

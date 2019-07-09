@@ -5,7 +5,7 @@ import cn.hutool.core.util.StrUtil;
 import com.garry.zboot.modules.base.dao.elasticsearch.EsLogDao;
 import com.garry.zboot.modules.base.model.elasticsearch.EsLog;
 import com.garry.zboot.modules.base.service.elasticsearch.EsLogService;
-import com.garry.zboot.modules.base.vo.SearchVo;
+import com.garry.zboot.common.vo.SearchVo;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;

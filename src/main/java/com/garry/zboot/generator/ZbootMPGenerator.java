@@ -95,7 +95,7 @@ public class ZbootMPGenerator {
     public static void main(String[] args) throws IOException {
 
         //模板路径
-        String root = System.getProperty("user.dir")+"/src/main/java/cn/exrick/xboot/generator/template";
+        String root = System.getProperty("user.dir")+"/src/main/java/com/garry/zboot/generator/template";
         FileResourceLoader resourceLoader = new FileResourceLoader(root,"utf-8");
         Configuration cfg = Configuration.defaultConfiguration();
         GroupTemplate gt = new GroupTemplate(resourceLoader, cfg);

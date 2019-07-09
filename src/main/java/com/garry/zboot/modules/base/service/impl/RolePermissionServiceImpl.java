@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.modules.base.dao.TRolePermissionDao;
-import com.garry.zboot.modules.base.model.TRolePermission;
+import com.garry.zboot.modules.base.model.RolePermission;
 import com.garry.zboot.modules.base.service.RolePermissionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,13 +28,13 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     }
 
     @Override
-    public List<TRolePermission> findByPermissionId(String permissionId) {
+    public List<RolePermission> findByPermissionId(String permissionId) {
 
         return rolePermissionDao.findByPermissionId(permissionId);
     }
 
     @Override
-    public List<TRolePermission> findByRoleId(String roleId) {
+    public List<RolePermission> findByRoleId(String roleId) {
 
         return rolePermissionDao.findByRoleId(roleId);
     }

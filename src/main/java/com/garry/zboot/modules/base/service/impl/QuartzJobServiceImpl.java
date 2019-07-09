@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.modules.base.dao.TQuartzJobDao;
-import com.garry.zboot.modules.base.model.TQuartzJob;
+import com.garry.zboot.modules.base.model.QuartzJob;
 import com.garry.zboot.modules.base.service.QuartzJobService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class QuartzJobServiceImpl implements QuartzJobService {
     }
 
     @Override
-    public List<TQuartzJob> findByJobClassName(String jobClassName) {
+    public List<QuartzJob> findByJobClassName(String jobClassName) {
 
         return quartzJobDao.findByJobClassName(jobClassName);
     }

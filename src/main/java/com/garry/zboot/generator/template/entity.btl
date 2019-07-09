@@ -1,6 +1,6 @@
 package ${entity.entityPackage};
 
-import cn.exrick.xboot.base.XbootBaseEntity;
+import com.garry.zboot.base.XbootBaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiModel;

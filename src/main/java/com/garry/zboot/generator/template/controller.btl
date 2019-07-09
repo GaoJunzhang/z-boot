@@ -1,11 +1,11 @@
 package ${entity.controllerPackage};
 
-import cn.exrick.xboot.base.XbootBaseController;
-import cn.exrick.xboot.common.utils.PageUtil;
-import cn.exrick.xboot.common.utils.ResultUtil;
-import cn.exrick.xboot.common.vo.PageVo;
-import cn.exrick.xboot.common.vo.Result;
-import cn.exrick.xboot.common.vo.SearchVo;
+import com.garry.zboot.base.XbootBaseController;
+import com.garry.zboot.common.utils.PageUtil;
+import com.garry.zboot.common.utils.ResultUtil;
+import com.garry.zboot.common.vo.PageVo;
+import com.garry.zboot.common.vo.Result;
+import com.garry.zboot.common.vo.SearchVo;
 import ${entity.entityPackage}.${entity.className};
 import ${entity.servicePackage}.${entity.className}Service;
 import io.swagger.annotations.Api;
@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 @RestController
 @Api(description = "${entity.description}管理接口")
-@RequestMapping("/xboot/${entity.classNameLowerCase}")
+@RequestMapping("/zboot/${entity.classNameLowerCase}")
 @Transactional
 public class ${entity.className}Controller extends XbootBaseController<${entity.className}, ${entity.primaryKeyType}> {
 

@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TUserRole;
+import com.garry.zboot.modules.base.model.UserRole;
 
 import java.util.List;
 
@@ -13,13 +13,13 @@ import java.util.List;
 * creat_date: 2019/7/8
 * creat_time: 17:16
 **/
-public interface TUserRoleDao extends ZbootBaseDao<TUserRole,String> {
+public interface TUserRoleDao extends ZbootBaseDao<UserRole,String> {
     /**
      * 通过roleId查找
      * @param roleId
      * @return
      */
-    List<TUserRole> findByRoleId(String roleId);
+    List<UserRole> findByRoleId(String roleId);
 
     /**
      * 删除用户角色

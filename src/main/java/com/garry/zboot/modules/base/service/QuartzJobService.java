@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service;
 
 import com.garry.zboot.base.ZbootBaseService;
-import com.garry.zboot.modules.base.model.TQuartzJob;
+import com.garry.zboot.modules.base.model.QuartzJob;
 
 import java.util.List;
 
@@ -10,12 +10,12 @@ import java.util.List;
  * @Author gaojunzhang
  * @Date 2019/7/8 23:28
  */
-public interface QuartzJobService extends ZbootBaseService<TQuartzJob,String> {
+public interface QuartzJobService extends ZbootBaseService<QuartzJob,String> {
 
     /**
      * 通过类名获取
      * @param jobClassName
      * @return
      */
-    List<TQuartzJob> findByJobClassName(String jobClassName);
+    List<QuartzJob> findByJobClassName(String jobClassName);
 }

@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.modules.base.dao.TUserRoleDao;
-import com.garry.zboot.modules.base.model.TUserRole;
+import com.garry.zboot.modules.base.model.UserRole;
 import com.garry.zboot.modules.base.service.UserRoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class UserRoleServiceImpl implements UserRoleService {
     }
 
     @Override
-    public List<TUserRole> findByRoleId(String roleId) {
+    public List<UserRole> findByRoleId(String roleId) {
         return userRoleDao.findByRoleId(roleId);
     }
 

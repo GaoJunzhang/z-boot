@@ -2,8 +2,8 @@ package com.garry.zboot.modules.base.service;
 
 
 import com.garry.zboot.base.ZbootBaseService;
-import com.garry.zboot.modules.base.model.TLog;
-import com.garry.zboot.modules.base.vo.SearchVo;
+import com.garry.zboot.modules.base.model.Log;
+import com.garry.zboot.common.vo.SearchVo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -12,7 +12,7 @@ import org.springframework.data.domain.Pageable;
  * @Author gaojunzhang
  * @Date 2019/7/8 23:28
  */
-public interface LogService extends ZbootBaseService<TLog,String> {
+public interface LogService extends ZbootBaseService<Log,String> {
 
     /**
      * 分页搜索获取日志
@@ -22,7 +22,7 @@ public interface LogService extends ZbootBaseService<TLog,String> {
      * @param pageable
      * @return
      */
-    Page<TLog> findByConfition(Integer type, String key, SearchVo searchVo, Pageable pageable);
+    Page<Log> findByConfition(Integer type, String key, SearchVo searchVo, Pageable pageable);
     /**
      * 删除所有
      */

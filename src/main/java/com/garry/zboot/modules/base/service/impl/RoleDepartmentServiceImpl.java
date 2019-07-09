@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.modules.base.dao.TRoleDepartmentDao;
-import com.garry.zboot.modules.base.model.TRoleDepartment;
+import com.garry.zboot.modules.base.model.RoleDepartment;
 import com.garry.zboot.modules.base.service.RoleDepartmentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class RoleDepartmentServiceImpl implements RoleDepartmentService {
     }
 
     @Override
-    public List<TRoleDepartment> findByRoleId(String roleId) {
+    public List<RoleDepartment> findByRoleId(String roleId) {
 
         return roleDepartmentDao.findByRoleId(roleId);
     }

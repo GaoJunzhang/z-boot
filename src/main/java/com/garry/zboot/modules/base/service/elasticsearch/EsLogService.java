@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.elasticsearch;
 
 import com.garry.zboot.modules.base.model.elasticsearch.EsLog;
-import com.garry.zboot.modules.base.vo.SearchVo;
+import com.garry.zboot.common.vo.SearchVo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

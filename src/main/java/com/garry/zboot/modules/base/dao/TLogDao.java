@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TLog;
+import com.garry.zboot.modules.base.model.Log;
 
 /**
 * class_name: TLogDao
@@ -11,5 +11,5 @@ import com.garry.zboot.modules.base.model.TLog;
 * creat_date: 2019/7/8
 * creat_time: 17:09
 **/
-public interface TLogDao extends ZbootBaseDao<TLog,String> {
+public interface TLogDao extends ZbootBaseDao<Log,String> {
 }

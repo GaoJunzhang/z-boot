@@ -3,9 +3,9 @@ package com.garry.zboot.modules.base.service.impl;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import com.garry.zboot.modules.base.dao.TLogDao;
-import com.garry.zboot.modules.base.model.TLog;
+import com.garry.zboot.modules.base.model.Log;
 import com.garry.zboot.modules.base.service.LogService;
-import com.garry.zboot.modules.base.vo.SearchVo;
+import com.garry.zboot.common.vo.SearchVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -39,12 +39,12 @@ public class LogServiceImpl implements LogService {
     }
 
     @Override
-    public Page<TLog> findByConfition(Integer type, String key, SearchVo searchVo, Pageable pageable) {
+    public Page<Log> findByConfition(Integer type, String key, SearchVo searchVo, Pageable pageable) {
 
-        return logDao.findAll(new Specification<TLog>() {
+        return logDao.findAll(new Specification<Log>() {
             @Nullable
             @Override
-            public Predicate toPredicate(Root<TLog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+            public Predicate toPredicate(Root<Log> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
 
                 Path<String> nameField = root.get("name");
                 Path<String> requestUrlField = root.get("requestUrl");

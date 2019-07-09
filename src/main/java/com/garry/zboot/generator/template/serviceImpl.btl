@@ -3,7 +3,7 @@ package ${entity.serviceImplPackage};
 import ${entity.daoPackage}.${entity.className}Dao;
 import ${entity.entityPackage}.${entity.className};
 import ${entity.servicePackage}.${entity.className}Service;
-import cn.exrick.xboot.common.vo.SearchVo;
+import com.garry.zboot.common.vo.SearchVo;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import lombok.extern.slf4j.Slf4j;

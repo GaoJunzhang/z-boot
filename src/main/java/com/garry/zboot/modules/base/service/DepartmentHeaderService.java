@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service;
 
 import com.garry.zboot.base.ZbootBaseService;
-import com.garry.zboot.modules.base.model.TDepartmentHeader;
+import com.garry.zboot.modules.base.model.DepartmentHeader;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import java.util.List;
  * @Author gaojunzhang
  * @Date 2019/7/8 23:26
  */
-public interface DepartmentHeaderService extends ZbootBaseService<TDepartmentHeader,String> {
+public interface DepartmentHeaderService extends ZbootBaseService<DepartmentHeader,String> {
 
     /**
      * 通过部门和负责人类型获取

@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TDepartment;
+import com.garry.zboot.modules.base.model.Department;
 
 import java.util.List;
 
@@ -13,13 +13,13 @@ import java.util.List;
 * creat_date: 2019/7/8
 * creat_time: 16:56
 **/
-public interface TDepartmentDao extends ZbootBaseDao<TDepartment,String> {
+public interface TDepartmentDao extends ZbootBaseDao<Department,String> {
     /**
      *  通过父id获取 升序
      * @param parentId
      * @return
      */
-    List<TDepartment> findByParentIdOrderBySortOrder(String parentId);
+    List<Department> findByParentIdOrderBySortOrder(String parentId);
 
     /**
      * 通过父id获取 升序 数据权限
@@ -27,7 +27,7 @@ public interface TDepartmentDao extends ZbootBaseDao<TDepartment,String> {
      * @param departmentIds
      * @return
      */
-    List<TDepartment> findByParentIdAndIdInOrderBySortOrder(String parentId, List<String> departmentIds);
+    List<Department> findByParentIdAndIdInOrderBySortOrder(String parentId, List<String> departmentIds);
 
     /**
      * 通过父id和状态获取 升序
@@ -35,14 +35,14 @@ public interface TDepartmentDao extends ZbootBaseDao<TDepartment,String> {
      * @param status
      * @return
      */
-    List<TDepartment> findByParentIdAndStatusOrderBySortOrder(String parentId, Integer status);
+    List<Department> findByParentIdAndStatusOrderBySortOrder(String parentId, Integer status);
 
     /**
      * 部门名模糊搜索 升序
      * @param title
      * @return
      */
-    List<TDepartment> findByTitleLikeOrderBySortOrder(String title);
+    List<Department> findByTitleLikeOrderBySortOrder(String title);
 
     /**
      * 部门名模糊搜索 升序 数据权限
@@ -50,5 +50,5 @@ public interface TDepartmentDao extends ZbootBaseDao<TDepartment,String> {
      * @param departmentIds
      * @return
      */
-    List<TDepartment> findByTitleLikeAndIdInOrderBySortOrder(String title, List<String> departmentIds);
+    List<Department> findByTitleLikeAndIdInOrderBySortOrder(String title, List<String> departmentIds);
 }

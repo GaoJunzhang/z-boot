@@ -3,7 +3,7 @@ package com.garry.zboot.modules.base.service.impl;
 import cn.hutool.core.util.StrUtil;
 import com.garry.zboot.common.constant.CommonConstant;
 import com.garry.zboot.modules.base.dao.TDictDataDao;
-import com.garry.zboot.modules.base.model.TDictData;
+import com.garry.zboot.modules.base.model.DictData;
 import com.garry.zboot.modules.base.service.DictDataService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,12 +37,12 @@ public class DictDataServiceImpl implements DictDataService {
     }
 
     @Override
-    public Page<TDictData> findByCondition(TDictData dictData, Pageable pageable) {
+    public Page<DictData> findByCondition(DictData dictData, Pageable pageable) {
 
-        return dictDataDao.findAll(new Specification<TDictData>() {
+        return dictDataDao.findAll(new Specification<DictData>() {
             @Nullable
             @Override
-            public Predicate toPredicate(Root<TDictData> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+            public Predicate toPredicate(Root<DictData> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
 
                 Path<String> titleField = root.get("title");
                 Path<Integer> statusField = root.get("status");
@@ -73,7 +73,7 @@ public class DictDataServiceImpl implements DictDataService {
     }
 
     @Override
-    public List<TDictData> findByDictId(String dictId) {
+    public List<DictData> findByDictId(String dictId) {
 
         return dictDataDao.findByDictIdAndStatusOrderBySortOrder(dictId, CommonConstant.STATUS_NORMAL);
     }

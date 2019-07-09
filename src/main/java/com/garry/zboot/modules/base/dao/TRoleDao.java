@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TRole;
+import com.garry.zboot.modules.base.model.Role;
 
 import java.util.List;
 
@@ -13,11 +13,11 @@ import java.util.List;
 * creat_date: 2019/7/8
 * creat_time: 17:12
 **/
-public interface TRoleDao extends ZbootBaseDao<TRole,String> {
+public interface TRoleDao extends ZbootBaseDao<Role,String> {
     /**
      * 获取默认角色
      * @param defaultRole
      * @return
      */
-    List<TRole> findByDefaultRole(Boolean defaultRole);
+    List<Role> findByDefaultRole(Boolean defaultRole);
 }

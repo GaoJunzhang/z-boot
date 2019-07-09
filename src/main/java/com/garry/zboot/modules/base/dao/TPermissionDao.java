@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TPermission;
+import com.garry.zboot.modules.base.model.Permission;
 
 import java.util.List;
 
@@ -13,21 +13,21 @@ import java.util.List;
 * creat_date: 2019/7/8
 * creat_time: 17:09
 **/
-public interface TPermissionDao extends ZbootBaseDao<TPermission,String> {
+public interface TPermissionDao extends ZbootBaseDao<Permission,String> {
     /**
      * 通过层级查找
      * 默认升序
      * @param level
      * @return
      */
-    List<TPermission> findByLevelOrderBySortOrder(Integer level);
+    List<Permission> findByLevelOrderBySortOrder(Integer level);
 
     /**
      * 通过parendId查找
      * @param parentId
      * @return
      */
-    List<TPermission> findByParentIdOrderBySortOrder(String parentId);
+    List<Permission> findByParentIdOrderBySortOrder(String parentId);
 
     /**
      * 通过类型和状态获取
@@ -35,19 +35,19 @@ public interface TPermissionDao extends ZbootBaseDao<TPermission,String> {
      * @param status
      * @return
      */
-    List<TPermission> findByTypeAndStatusOrderBySortOrder(Integer type, Integer status);
+    List<Permission> findByTypeAndStatusOrderBySortOrder(Integer type, Integer status);
 
     /**
      * 通过名称获取
      * @param title
      * @return
      */
-    List<TPermission> findByTitle(String title);
+    List<Permission> findByTitle(String title);
 
     /**
      * 模糊搜索
      * @param title
      * @return
      */
-    List<TPermission> findByTitleLikeOrderBySortOrder(String title);
+    List<Permission> findByTitleLikeOrderBySortOrder(String title);
 }

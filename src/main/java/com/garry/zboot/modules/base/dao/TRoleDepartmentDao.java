@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TRoleDepartment;
+import com.garry.zboot.modules.base.model.RoleDepartment;
 
 import java.util.List;
 
@@ -13,13 +13,13 @@ import java.util.List;
 * creat_date: 2019/7/8
 * creat_time: 17:14
 **/
-public interface TRoleDepartmentDao extends ZbootBaseDao<TRoleDepartment,String> {
+public interface TRoleDepartmentDao extends ZbootBaseDao<RoleDepartment,String> {
     /**
      * 通过roleId获取
      * @param roleId
      * @return
      */
-    List<TRoleDepartment> findByRoleId(String roleId);
+    List<RoleDepartment> findByRoleId(String roleId);
 
     /**
      * 通过角色id删除

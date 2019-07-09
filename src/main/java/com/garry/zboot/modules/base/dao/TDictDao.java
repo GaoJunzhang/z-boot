@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TDict;
+import com.garry.zboot.modules.base.model.Dict;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
@@ -15,20 +15,20 @@ import java.util.List;
 * creat_date: 2019/7/8
 * creat_time: 17:06
 **/
-public interface TDictDao extends ZbootBaseDao<TDict,String> {
+public interface TDictDao extends ZbootBaseDao<Dict,String> {
     /**
      * 排序获取全部
      * @return
      */
     @Query(value = "select * from t_dict d order by d.sort_order", nativeQuery = true)
-    List<TDict> findAllOrderBySortOrder();
+    List<Dict> findAllOrderBySortOrder();
 
     /**
      * 通过type获取
      * @param type
      * @return
      */
-    List<TDict> findByType(String type);
+    List<Dict> findByType(String type);
 
     /**
      * 模糊搜索
@@ -36,5 +36,5 @@ public interface TDictDao extends ZbootBaseDao<TDict,String> {
      * @return
      */
     @Query(value = "select * from t_dict d where d.title like %:key% or d.type like %:key% order by d.sort_order", nativeQuery = true)
-    List<TDict> findByTitleOrTypeLike(@Param("key") String key);
+    List<Dict> findByTitleOrTypeLike(@Param("key") String key);
 }

@@ -1,11 +1,11 @@
 package com.garry.zboot.common.utils;
 
-import cn.exrick.xboot.common.constant.CommonConstant;
-import cn.exrick.xboot.modules.base.entity.Permission;
-import cn.exrick.xboot.modules.base.entity.Role;
-import cn.exrick.xboot.modules.base.entity.User;
-import cn.exrick.xboot.modules.base.service.UserService;
-import cn.exrick.xboot.modules.base.service.mybatis.IUserRoleService;
+import com.garry.zboot.common.constant.CommonConstant;
+import com.garry.zboot.modules.base.model.Permission;
+import com.garry.zboot.modules.base.model.Role;
+import com.garry.zboot.modules.base.model.User;
+import com.garry.zboot.modules.base.service.UserService;
+import com.garry.zboot.modules.base.service.mybatis.IUserRoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;

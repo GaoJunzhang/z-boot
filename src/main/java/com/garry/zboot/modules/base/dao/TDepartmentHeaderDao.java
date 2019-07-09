@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.dao;
 
 import com.garry.zboot.base.ZbootBaseDao;
-import com.garry.zboot.modules.base.model.TDepartmentHeader;
+import com.garry.zboot.modules.base.model.DepartmentHeader;
 
 import java.util.List;
 
@@ -13,14 +13,14 @@ import java.util.List;
 * creat_date: 2019/7/8
 * creat_time: 17:00
 **/
-public interface TDepartmentHeaderDao extends ZbootBaseDao<TDepartmentHeader,String> {
+public interface TDepartmentHeaderDao extends ZbootBaseDao<DepartmentHeader,String> {
     /**
      * 通过部门和负责人类型获取
      * @param departmentId
      * @param type
      * @return
      */
-    List<TDepartmentHeader> findByDepartmentIdAndType(String departmentId, Integer type);
+    List<DepartmentHeader> findByDepartmentIdAndType(String departmentId, Integer type);
 
     /**
      * 通过部门id删除

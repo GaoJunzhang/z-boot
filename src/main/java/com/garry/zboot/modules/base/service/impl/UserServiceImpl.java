@@ -7,12 +7,12 @@ import com.garry.zboot.modules.base.dao.TDepartmentDao;
 import com.garry.zboot.modules.base.dao.TUserDao;
 import com.garry.zboot.modules.base.dao.mapper.PermissionMapper;
 import com.garry.zboot.modules.base.dao.mapper.UserRoleMapper;
-import com.garry.zboot.modules.base.model.TDepartment;
-import com.garry.zboot.modules.base.model.TPermission;
-import com.garry.zboot.modules.base.model.TRole;
-import com.garry.zboot.modules.base.model.TUser;
+import com.garry.zboot.modules.base.model.Department;
+import com.garry.zboot.modules.base.model.Permission;
+import com.garry.zboot.modules.base.model.Role;
+import com.garry.zboot.modules.base.model.User;
 import com.garry.zboot.modules.base.service.UserService;
-import com.garry.zboot.modules.base.vo.SearchVo;
+import com.garry.zboot.common.vo.SearchVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -58,21 +58,21 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public TUser findByUsername(String username) {
+    public User findByUsername(String username) {
         
-        List<TUser> list=userDao.findByUsername(username);
+        List<User> list=userDao.findByUsername(username);
         if(list!=null&&list.size()>0){
-            TUser user = list.get(0);
+            User user = list.get(0);
             // 关联部门
             if(StrUtil.isNotBlank(user.getDepartmentId())){
-                TDepartment department = departmentDao.getOne(user.getDepartmentId());
+                Department department = departmentDao.getOne(user.getDepartmentId());
                 user.setDepartmentTitle(department.getTitle());
             }
             // 关联角色
-            List<TRole> roleList = userRoleMapper.findByUserId(user.getId());
+            List<Role> roleList = userRoleMapper.findByUserId(user.getId());
             user.setRoles(roleList);
             // 关联权限菜单
-            List<TPermission> permissionList = permissionMapper.findByUserId(user.getId());
+            List<Permission> permissionList = permissionMapper.findByUserId(user.getId());
             user.setPermissions(permissionList);
             return user;
         }
@@ -80,34 +80,34 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public TUser findByMobile(String mobile) {
+    public User findByMobile(String mobile) {
 
-        List<TUser> list = userDao.findByMobile(mobile);
+        List<User> list = userDao.findByMobile(mobile);
         if(list!=null&&list.size()>0) {
-            TUser user = list.get(0);
+            User user = list.get(0);
             return user;
         }
         return null;
     }
 
     @Override
-    public TUser findByEmail(String email) {
+    public User findByEmail(String email) {
 
-        List<TUser> list = userDao.findByEmail(email);
+        List<User> list = userDao.findByEmail(email);
         if(list!=null&&list.size()>0) {
-            TUser user = list.get(0);
+            User user = list.get(0);
             return user;
         }
         return null;
     }
 
     @Override
-    public Page<TUser> findByCondition(TUser user, SearchVo searchVo, Pageable pageable) {
+    public Page<User> findByCondition(User user, SearchVo searchVo, Pageable pageable) {
 
-        return userDao.findAll(new Specification<TUser>() {
+        return userDao.findAll(new Specification<User>() {
             @Nullable
             @Override
-            public Predicate toPredicate(Root<TUser> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+            public Predicate toPredicate(Root<User> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
 
                 Path<String> usernameField = root.get("username");
                 Path<String> mobileField = root.get("mobile");
@@ -169,7 +169,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<TUser> findByDepartmentId(String departmentId) {
+    public List<User> findByDepartmentId(String departmentId) {
 
         return userDao.findByDepartmentId(departmentId);
     }

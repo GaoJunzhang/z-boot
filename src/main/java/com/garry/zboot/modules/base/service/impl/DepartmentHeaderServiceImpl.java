@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.modules.base.dao.TDepartmentHeaderDao;
-import com.garry.zboot.modules.base.model.TDepartmentHeader;
+import com.garry.zboot.modules.base.model.DepartmentHeader;
 import com.garry.zboot.modules.base.service.DepartmentHeaderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +34,7 @@ public class DepartmentHeaderServiceImpl implements DepartmentHeaderService {
     public List<String> findHeaderByDepartmentId(String departmentId, Integer type) {
 
         List<String> list = new ArrayList<>();
-        List<TDepartmentHeader> headers = departmentHeaderDao.findByDepartmentIdAndType(departmentId, type);
+        List<DepartmentHeader> headers = departmentHeaderDao.findByDepartmentIdAndType(departmentId, type);
         headers.forEach(e->{
             list.add(e.getUserId());
         });

@@ -2,7 +2,7 @@ package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.common.utils.SecurityUtil;
 import com.garry.zboot.modules.base.dao.TDepartmentDao;
-import com.garry.zboot.modules.base.model.TDepartment;
+import com.garry.zboot.modules.base.model.Department;
 import com.garry.zboot.modules.base.service.DepartmentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +33,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public List<TDepartment> findByParentIdOrderBySortOrder(String parentId, Boolean openDataFilter) {
+    public List<Department> findByParentIdOrderBySortOrder(String parentId, Boolean openDataFilter) {
 
         // 数据权限
         List<String> depIds = securityUtil.getDeparmentIds();
@@ -44,13 +44,13 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public List<TDepartment> findByParentIdAndStatusOrderBySortOrder(String parentId, Integer status) {
+    public List<Department> findByParentIdAndStatusOrderBySortOrder(String parentId, Integer status) {
 
         return departmentDao.findByParentIdAndStatusOrderBySortOrder(parentId, status);
     }
 
     @Override
-    public List<TDepartment> findByTitleLikeOrderBySortOrder(String title, Boolean openDataFilter) {
+    public List<Department> findByTitleLikeOrderBySortOrder(String title, Boolean openDataFilter) {
 
         // 数据权限
         List<String> depIds = securityUtil.getDeparmentIds();

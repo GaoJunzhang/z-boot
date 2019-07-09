@@ -1,9 +1,9 @@
 package ${entity.controllerPackage};
 
-import cn.exrick.xboot.common.utils.PageUtil;
-import cn.exrick.xboot.common.utils.ResultUtil;
-import cn.exrick.xboot.common.vo.PageVo;
-import cn.exrick.xboot.common.vo.Result;
+import com.garry.zboot.common.utils.PageUtil;
+import com.garry.zboot.common.utils.ResultUtil;
+import com.garry.zboot.common.vo.PageVo;
+import com.garry.zboot.common.vo.Result;
 import ${entity.entityPackage}.${entity.className};
 import ${entity.servicePackage}.I${entity.className}Service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -23,7 +23,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @Api(description = "${entity.description}管理接口")
-@RequestMapping("/xboot/${entity.classNameLowerCase}")
+@RequestMapping("/zboot/${entity.classNameLowerCase}")
 @Transactional
 public class ${entity.className}Controller {
 
