@@ -1,7 +1,7 @@
 package com.garry.zboot.modules.base.service.impl;
 
 import com.garry.zboot.common.utils.SecurityUtil;
-import com.garry.zboot.modules.base.dao.TDepartmentDao;
+import com.garry.zboot.modules.base.dao.DepartmentDao;
 import com.garry.zboot.modules.base.model.Department;
 import com.garry.zboot.modules.base.service.DepartmentService;
 import lombok.extern.slf4j.Slf4j;
@@ -22,13 +22,13 @@ import java.util.List;
 public class DepartmentServiceImpl implements DepartmentService {
 
     @Autowired
-    private TDepartmentDao departmentDao;
+    private DepartmentDao departmentDao;
 
     @Autowired
     private SecurityUtil securityUtil;
 
     @Override
-    public TDepartmentDao getRepository() {
+    public DepartmentDao getRepository() {
         return departmentDao;
     }
 

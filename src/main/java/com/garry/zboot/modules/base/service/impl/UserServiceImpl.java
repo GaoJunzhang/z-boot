@@ -3,8 +3,8 @@ package com.garry.zboot.modules.base.service.impl;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import com.garry.zboot.common.utils.SecurityUtil;
-import com.garry.zboot.modules.base.dao.TDepartmentDao;
-import com.garry.zboot.modules.base.dao.TUserDao;
+import com.garry.zboot.modules.base.dao.DepartmentDao;
+import com.garry.zboot.modules.base.dao.UserDao;
 import com.garry.zboot.modules.base.dao.mapper.PermissionMapper;
 import com.garry.zboot.modules.base.dao.mapper.UserRoleMapper;
 import com.garry.zboot.modules.base.model.Department;
@@ -38,7 +38,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private TUserDao userDao;
+    private UserDao userDao;
 
     @Autowired
     private UserRoleMapper userRoleMapper;
@@ -47,13 +47,13 @@ public class UserServiceImpl implements UserService {
     private PermissionMapper permissionMapper;
 
     @Autowired
-    private TDepartmentDao departmentDao;
+    private DepartmentDao departmentDao;
 
     @Autowired
     private SecurityUtil securityUtil;
 
     @Override
-    public TUserDao getRepository() {
+    public UserDao getRepository() {
         return userDao;
     }
 

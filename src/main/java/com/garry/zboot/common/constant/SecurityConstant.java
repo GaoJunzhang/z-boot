@@ -38,10 +38,10 @@ public interface SecurityConstant {
     /**
      * 交互token前缀key
      */
-    String TOKEN_PRE = "XBOOT_TOKEN_PRE:";
+    String TOKEN_PRE = "ZBOOT_TOKEN_PRE:";
 
     /**
      * 用户token前缀key 单点登录使用
      */
-    String USER_TOKEN = "XBOOT_USER_TOKEN:";
+    String USER_TOKEN = "ZBOOT_USER_TOKEN:";
 }

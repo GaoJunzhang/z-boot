@@ -6,14 +6,14 @@ import com.garry.zboot.modules.base.model.User;
 import java.util.List;
 
 /**
-* class_name: TUserDao
+* class_name: UserDao
 * package: com.garry.zboot.modules.base.dao
 * describe: 用户数据处理层
 * creat_user: ZhangGaoJun@zhanggj@seeyoo.cn
 * creat_date: 2019/7/8
 * creat_time: 17:15
 **/
-public interface TUserDao extends ZbootBaseDao<User,String> {
+public interface UserDao extends ZbootBaseDao<User,String> {
     /**
      * 通过用户名获取用户
      * @param username

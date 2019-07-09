@@ -6,14 +6,14 @@ import com.garry.zboot.modules.base.model.Permission;
 import java.util.List;
 
 /**
-* class_name: TPermissionDao
+* class_name: PermissionDao
 * package: com.garry.zboot.modules.base.dao
 * describe: 权限数据处理层
 * creat_user: ZhangGaoJun@zhanggj@seeyoo.cn
 * creat_date: 2019/7/8
 * creat_time: 17:09
 **/
-public interface TPermissionDao extends ZbootBaseDao<Permission,String> {
+public interface PermissionDao extends ZbootBaseDao<Permission,String> {
     /**
      * 通过层级查找
      * 默认升序

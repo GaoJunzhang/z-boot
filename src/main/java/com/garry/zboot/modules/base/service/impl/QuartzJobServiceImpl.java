@@ -1,6 +1,6 @@
 package com.garry.zboot.modules.base.service.impl;
 
-import com.garry.zboot.modules.base.dao.TQuartzJobDao;
+import com.garry.zboot.modules.base.dao.QuartzJobDao;
 import com.garry.zboot.modules.base.model.QuartzJob;
 import com.garry.zboot.modules.base.service.QuartzJobService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,10 +21,10 @@ import java.util.List;
 public class QuartzJobServiceImpl implements QuartzJobService {
 
     @Autowired
-    private TQuartzJobDao quartzJobDao;
+    private QuartzJobDao quartzJobDao;
 
     @Override
-    public TQuartzJobDao getRepository() {
+    public QuartzJobDao getRepository() {
         return quartzJobDao;
     }
 

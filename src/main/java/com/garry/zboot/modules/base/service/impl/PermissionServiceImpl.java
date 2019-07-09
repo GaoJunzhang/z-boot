@@ -1,6 +1,6 @@
 package com.garry.zboot.modules.base.service.impl;
 
-import com.garry.zboot.modules.base.dao.TPermissionDao;
+import com.garry.zboot.modules.base.dao.PermissionDao;
 import com.garry.zboot.modules.base.model.Permission;
 import com.garry.zboot.modules.base.service.PermissionService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,10 +21,10 @@ import java.util.List;
 public class PermissionServiceImpl implements PermissionService {
 
     @Autowired
-    private TPermissionDao permissionDao;
+    private PermissionDao permissionDao;
 
     @Override
-    public TPermissionDao getRepository() {
+    public PermissionDao getRepository() {
         return permissionDao;
     }
 

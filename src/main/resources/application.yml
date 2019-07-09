@@ -30,7 +30,7 @@ spring:
         # 允许清空统计数据
         reset-enable: true
         login-username: admin
-        login-password: 123456
+        login-password: ENC(kF21ndCjR/PpKHQCXZTdpw==)
         # IP白名单 多个逗号分隔,没有配置或者为空，则运行所有的ip
         allow:
         # IP黑名单
@@ -53,7 +53,8 @@ spring:
   # Elasticsearch
   data:
     elasticsearch:
-      cluster-nodes: 127.0.0.1:9300
+      cluster-nodes: 47.100.122.108:9300
+      cluster-name: admin
   # 定时任务
   quartz:
     # 任务信息存储至数据库

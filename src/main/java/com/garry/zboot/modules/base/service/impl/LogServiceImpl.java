@@ -2,7 +2,7 @@ package com.garry.zboot.modules.base.service.impl;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
-import com.garry.zboot.modules.base.dao.TLogDao;
+import com.garry.zboot.modules.base.dao.LogDao;
 import com.garry.zboot.modules.base.model.Log;
 import com.garry.zboot.modules.base.service.LogService;
 import com.garry.zboot.common.vo.SearchVo;
@@ -31,10 +31,10 @@ import java.util.List;
 public class LogServiceImpl implements LogService {
 
     @Autowired
-    private TLogDao logDao;
+    private LogDao logDao;
 
     @Override
-    public TLogDao getRepository() {
+    public LogDao getRepository() {
         return logDao;
     }
 

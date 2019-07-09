@@ -8,14 +8,14 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 /**
-* class_name: TDictDao
+* class_name: DictDao
 * package: com.garry.zboot.modules.base.dao
 * describe: 数据字典处理
 * creat_user: ZhangGaoJun@zhanggj@seeyoo.cn
 * creat_date: 2019/7/8
 * creat_time: 17:06
 **/
-public interface TDictDao extends ZbootBaseDao<Dict,String> {
+public interface DictDao extends ZbootBaseDao<Dict,String> {
     /**
      * 排序获取全部
      * @return

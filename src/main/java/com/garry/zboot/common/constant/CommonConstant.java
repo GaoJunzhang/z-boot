@@ -64,7 +64,7 @@ public interface CommonConstant {
     /**
      * 限流标识
      */
-    String LIMIT_ALL = "XBOOT_LIMIT_ALL";
+    String LIMIT_ALL = "ZBOOT_LIMIT_ALL";
 
     /**
      * 顶部菜单类型权限

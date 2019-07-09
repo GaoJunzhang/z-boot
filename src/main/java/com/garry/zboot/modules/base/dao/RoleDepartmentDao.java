@@ -6,14 +6,14 @@ import com.garry.zboot.modules.base.model.RoleDepartment;
 import java.util.List;
 
 /**
-* class_name: TRoleDepartmentDao
+* class_name: RoleDepartmentDao
 * package: com.garry.zboot.modules.base.dao
 * describe: 角色部门数据处理层
 * creat_user: ZhangGaoJun@zhanggj@seeyoo.cn
 * creat_date: 2019/7/8
 * creat_time: 17:14
 **/
-public interface TRoleDepartmentDao extends ZbootBaseDao<RoleDepartment,String> {
+public interface RoleDepartmentDao extends ZbootBaseDao<RoleDepartment,String> {
     /**
      * 通过roleId获取
      * @param roleId

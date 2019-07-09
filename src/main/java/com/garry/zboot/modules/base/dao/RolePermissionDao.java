@@ -5,7 +5,7 @@ import com.garry.zboot.modules.base.model.RolePermission;
 
 import java.util.List;
 
-public interface TRolePermissionDao extends ZbootBaseDao<RolePermission,String> {
+public interface RolePermissionDao extends ZbootBaseDao<RolePermission,String> {
     /**
      * 通过permissionId获取
      * @param permissionId

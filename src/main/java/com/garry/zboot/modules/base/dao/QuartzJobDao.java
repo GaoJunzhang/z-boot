@@ -5,7 +5,7 @@ import com.garry.zboot.modules.base.model.QuartzJob;
 
 import java.util.List;
 
-public interface TQuartzJobDao extends ZbootBaseDao<QuartzJob,String> {
+public interface QuartzJobDao extends ZbootBaseDao<QuartzJob,String> {
     /**
      * 通过类名获取
      * @param jobClassName

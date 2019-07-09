@@ -1,6 +1,6 @@
 package com.garry.zboot.modules.base.service.impl;
 
-import com.garry.zboot.modules.base.dao.TDepartmentHeaderDao;
+import com.garry.zboot.modules.base.dao.DepartmentHeaderDao;
 import com.garry.zboot.modules.base.model.DepartmentHeader;
 import com.garry.zboot.modules.base.service.DepartmentHeaderService;
 import lombok.extern.slf4j.Slf4j;
@@ -22,10 +22,10 @@ import java.util.List;
 public class DepartmentHeaderServiceImpl implements DepartmentHeaderService {
 
     @Autowired
-    private TDepartmentHeaderDao departmentHeaderDao;
+    private DepartmentHeaderDao departmentHeaderDao;
 
     @Override
-    public TDepartmentHeaderDao getRepository() {
+    public DepartmentHeaderDao getRepository() {
         return departmentHeaderDao;
     }
 

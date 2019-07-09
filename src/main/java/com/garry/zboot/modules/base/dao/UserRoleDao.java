@@ -6,14 +6,14 @@ import com.garry.zboot.modules.base.model.UserRole;
 import java.util.List;
 
 /**
-* class_name: TUserRoleDao
+* class_name: UserRoleDao
 * package: com.garry.zboot.modules.base.dao
 * describe: 用户角色数据处理层
 * creat_user: ZhangGaoJun@zhanggj@seeyoo.cn
 * creat_date: 2019/7/8
 * creat_time: 17:16
 **/
-public interface TUserRoleDao extends ZbootBaseDao<UserRole,String> {
+public interface UserRoleDao extends ZbootBaseDao<UserRole,String> {
     /**
      * 通过roleId查找
      * @param roleId

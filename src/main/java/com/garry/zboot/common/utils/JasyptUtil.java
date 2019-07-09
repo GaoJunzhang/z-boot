@@ -3,6 +3,7 @@ package com.garry.zboot.common.utils;
 import lombok.extern.slf4j.Slf4j;
 import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
 import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
 /**
@@ -57,8 +58,11 @@ public class JasyptUtil {
     public static void main(String[] args){
 
         //加密
-        System.out.println(encyptPwd("zboot","123456"));
+/*        System.out.println(encyptPwd("zboot","123456"));
         //解密
-        System.out.println(decyptPwd("zboot","kF21ndCjR/PpKHQCXZTdpw=="));
+        System.out.println(decyptPwd("zboot","kF21ndCjR/PpKHQCXZTdpw=="));*/
+        System.out.println(new BCryptPasswordEncoder().encode("123456"));
+        String encryptPass = new BCryptPasswordEncoder().encode("123456");
+        System.out.println(encryptPass);
     }
 }

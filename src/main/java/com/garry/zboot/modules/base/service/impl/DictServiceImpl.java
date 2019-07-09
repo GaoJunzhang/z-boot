@@ -1,6 +1,6 @@
 package com.garry.zboot.modules.base.service.impl;
 
-import com.garry.zboot.modules.base.dao.TDictDao;
+import com.garry.zboot.modules.base.dao.DictDao;
 import com.garry.zboot.modules.base.model.Dict;
 import com.garry.zboot.modules.base.service.DictService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,10 +21,10 @@ import java.util.List;
 public class DictServiceImpl implements DictService {
 
     @Autowired
-    private TDictDao dictDao;
+    private DictDao dictDao;
 
     @Override
-    public TDictDao getRepository() {
+    public DictDao getRepository() {
         return dictDao;
     }
 

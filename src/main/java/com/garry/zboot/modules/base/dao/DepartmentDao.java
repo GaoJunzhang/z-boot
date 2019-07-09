@@ -6,14 +6,14 @@ import com.garry.zboot.modules.base.model.Department;
 import java.util.List;
 
 /**
-* class_name: TDepartmentDao
+* class_name: DepartmentDao
 * package: com.garry.zboot.modules.base.dao
 * describe: 部门数据处理层
 * creat_user: ZhangGaoJun@zhanggj@seeyoo.cn
 * creat_date: 2019/7/8
 * creat_time: 16:56
 **/
-public interface TDepartmentDao extends ZbootBaseDao<Department,String> {
+public interface DepartmentDao extends ZbootBaseDao<Department,String> {
     /**
      *  通过父id获取 升序
      * @param parentId

@@ -1,6 +1,6 @@
 package com.garry.zboot.modules.base.service.impl;
 
-import com.garry.zboot.modules.base.dao.TRolePermissionDao;
+import com.garry.zboot.modules.base.dao.RolePermissionDao;
 import com.garry.zboot.modules.base.model.RolePermission;
 import com.garry.zboot.modules.base.service.RolePermissionService;
 import lombok.extern.slf4j.Slf4j;
@@ -20,10 +20,10 @@ import java.util.List;
 public class RolePermissionServiceImpl implements RolePermissionService {
 
     @Autowired
-    private TRolePermissionDao rolePermissionDao;
+    private RolePermissionDao rolePermissionDao;
 
     @Override
-    public TRolePermissionDao getRepository() {
+    public RolePermissionDao getRepository() {
         return rolePermissionDao;
     }
 

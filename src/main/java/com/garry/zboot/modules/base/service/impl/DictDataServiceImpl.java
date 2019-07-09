@@ -2,7 +2,7 @@ package com.garry.zboot.modules.base.service.impl;
 
 import cn.hutool.core.util.StrUtil;
 import com.garry.zboot.common.constant.CommonConstant;
-import com.garry.zboot.modules.base.dao.TDictDataDao;
+import com.garry.zboot.modules.base.dao.DictDataDao;
 import com.garry.zboot.modules.base.model.DictData;
 import com.garry.zboot.modules.base.service.DictDataService;
 import lombok.extern.slf4j.Slf4j;
@@ -29,10 +29,10 @@ import java.util.List;
 public class DictDataServiceImpl implements DictDataService {
 
     @Autowired
-    private TDictDataDao dictDataDao;
+    private DictDataDao dictDataDao;
 
     @Override
-    public TDictDataDao getRepository() {
+    public DictDataDao getRepository() {
         return dictDataDao;
     }
 

@@ -1,6 +1,6 @@
 package com.garry.zboot.modules.base.service.impl;
 
-import com.garry.zboot.modules.base.dao.TRoleDao;
+import com.garry.zboot.modules.base.dao.RoleDao;
 import com.garry.zboot.modules.base.model.Role;
 import com.garry.zboot.modules.base.service.RoleService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,10 +21,10 @@ import java.util.List;
 public class RoleServiceImpl implements RoleService {
 
     @Autowired
-    private TRoleDao roleDao;
+    private RoleDao roleDao;
 
     @Override
-    public TRoleDao getRepository() {
+    public RoleDao getRepository() {
         return roleDao;
     }
 
