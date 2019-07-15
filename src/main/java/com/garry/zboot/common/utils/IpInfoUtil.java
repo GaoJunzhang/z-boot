@@ -77,6 +77,9 @@ public class IpInfoUtil {
      */
     public String getIpWeatherInfo(String ip){
 
+        if("127.0.0.1".equals(ip)||ip==""){
+            ip="115.239.210.27";
+        }
         String GET_IP_WEATHER = "http://apicloud.mob.com/v1/weather/ip?key="+ appKey +"&ip=";
         if(StrUtil.isNotBlank(ip)){
             String url = GET_IP_WEATHER + ip;
